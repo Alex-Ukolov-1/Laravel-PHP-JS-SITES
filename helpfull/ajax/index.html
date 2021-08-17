@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+   
+   <input type="text" name="title" class="content"><br>
+   <input type="text" name="content" class="title"></input><br>
+   <button class="otpravka">submit</button>
+   
+
+ <script>
+ $(document).ready(function(){
+ 	$('button.otpravka').on('click',function(){
+ 		var Titlevalue=$('input.title').val();
+ 		var Contentvalue=$('input.content').val();
+
+ //
+        $.ajax({
+  method: "POST",
+  url: "some.php",
+  data: { title: Titlevalue, content: Contentvalue }
+})
+  .done(function( msg ) {
+    alert( "Data Saved: " + msg );
+  });
+
+   })
+ });
+ </script>
+</body>
+</html>
