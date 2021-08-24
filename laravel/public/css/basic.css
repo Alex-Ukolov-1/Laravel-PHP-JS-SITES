@@ -1,0 +1,252 @@
+body {
+  color: black;
+  background-color: white;
+  font-family: sans-serif;
+  margin: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+a:link, a:active, a:hover {
+  color: #680148;
+}
+a:visited {
+  color: #ab86b6;
+}
+header, footer {
+  background-color: white;
+}
+header h1, header h2 {
+  margin: 0px;
+}
+section {
+  padding: 5px;
+}
+footer p {
+  font-style: italic;
+  text-align: right;
+  margin: 0px;
+}
+section {
+  counter-reset: counter-h2 counter-h3 counter-h4 counter-h5 counter-h6;
+}
+section h2:before {
+  counter-increment: counter-h2;
+  counter-reset: counter-h3;
+  content: counter(counter-h2) ". ";
+}
+section h3:before {
+  counter-increment: counter-h3;
+  counter-reset: counter-h4;
+  content: counter(counter-h2) "." counter(counter-h3) ". ";
+}
+section h4:before {
+  counter-increment: counter-h4;
+  counter-reset: counter-h5;
+  content: counter(counter-h2) "." counter(counter-h3) "." counter(counter-h4) ". ";
+}
+section h5:before {
+  counter-increment: counter-h5;
+  counter-reset: counter-h6;
+  content: counter(counter-h2) "." counter(counter-h3) "." counter(counter-h4)
+  "." counter(counter-h5) ". ";
+}
+section h6:before {
+  counter-increment: counter-h6;
+  content: counter(counter-h2) "." counter(counter-h3) "." counter(counter-h4)
+  "." counter(counter-h5) "." counter(counter-h6) ". ";
+}
+figure {
+  text-align: center;
+  margin: 40px 0px;
+}
+figure * {
+  max-width: 100%;
+  max-height: 300px;
+}
+div.sign {
+  font-style: italic;
+  text-align: center;
+  margin-top: -30px;
+}
+form {
+  background-color: white;
+  padding: 5px;
+  overflow: hidden;
+}
+label, input, textarea, select {
+  display: block;
+}
+label {
+  margin: 10px 0px 2px 0px;
+}
+label:first-child {
+  margin-top: 0px;
+}
+input, textarea, select {
+  padding: 5px;
+  border: 4px solid grey;
+}
+textarea {
+  font-family: monospace;
+  width: calc(100% - 18px);
+}
+input[type=submit], input[type=button], input[type=reset] {
+  float: right;
+  color: white;
+  background-color: grey;
+  font-weight: bold;
+  margin: 15px 0px 5px 0px;
+  min-width: 80px;
+  border: none;
+}
+input ~ * {
+  clear: both;
+}
+aside {
+	margin-top: 20px;
+  border: 1px solid grey;
+}
+aside > a {
+  display: block;
+	padding: 2px 5px;
+}
+aside > a:link, aside > a:visited, aside > a:active, aside > a:hover {
+  color: #680148;
+	text-decoration: none;
+}
+aside > a:link, aside > a:visited {
+  color: white;
+  background-color: grey;
+}
+aside > a span {
+	font-family: monospace;
+}
+aside > a span:before {
+	content: "[-] ";
+}
+aside > div {
+	padding: 10px;
+	overflow: hidden;
+	transition: height 0.5s, padding 0.5s;
+}
+aside > div *:first-child {
+	margin-top: 0px;
+}
+aside.condensed > div {
+	padding: 0px 10px;
+	transition: height 0.5s, padding 0.5s;
+}
+aside.condensed > a span:before {
+	content: "[+] ";
+}
+.lightbox a:link, .lightbox a:visited, .lightbox a:active, .lightbox a:hover,
+#lightbox_close a:link, #lightbox_close a:visited, #lightbox_close a:active,
+#lightbox_close a:hover {
+	text-decoration: none;
+}
+.lightbox a:link, .lightbox a:visited, #lightbox_close a:link,
+#lightbox_close a:visited {
+  color: grey;
+}
+.lightbox a span {
+	font-size: smaller;
+}
+.lightbox a img.full-image {
+  display: none;
+}
+#lightbox_cover {
+	background-color: grey;
+	opacity: 0.0;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	visibility: hidden;
+	cursor: pointer;
+	transition: opacity 0.5s
+}
+#lightbox_cover.active {
+	opacity: 0.7;
+	visibility: visible;
+	transition: opacity 0.5s
+}
+#lightbox_window {
+  display: flex;
+	background-color: white;
+	padding: 20px;
+	border: 3px solid black;
+	border-radius: 10px;
+	position: fixed;
+	left: 50px;
+	top: 50px;
+	right: 50px;
+	bottom: 50px;
+	opacity: 0.0;
+	visibility: hidden;
+	transition: opacity 0.5s;
+}
+#lightbox_window.active {
+	opacity: 1.0;
+	visibility: visible;
+	transition: opacity 0.5s;
+}
+#lightbox_window img {
+	max-width: calc(100vw - 140px);
+	max-height: calc(100vh - 140px);
+  margin: auto;
+}
+#lightbox_close {
+	font-size: larger;
+	font-weight: bold;
+	position: absolute;
+	top: 14px;
+	right: 14px;
+}
+form div.errors { color: red; }
+article {
+  border: 1px solid grey;
+  margin: 10px 0px;
+  padding: 10px;
+}
+article h2 {
+  margin-top: 0px;
+}
+article h2:before {
+  counter-increment: none;
+  content: none;
+}
+.author-created {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+.wide {
+  width: calc(100% - 20px);
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+pre p {
+  margin: 2px auto;
+}
+pre p:first-child {
+  margin-top: auto;
+}
+pre p:last-child {
+  margin-bottom: auto;
+}
+article.comment {
+	padding: 8px;
+	margin: 20px 0px;
+}
+textarea.comment-content {
+  height: 10em;
+}

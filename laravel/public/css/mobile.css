@@ -1,0 +1,45 @@
+p, div, pre, li, th, td, input, textarea, select {
+  font-size: 12pt;
+}
+h6 {
+  font-size: 14pt;
+}
+h5 {
+  font-size: 16pt;
+}
+h4 {
+  font-size: 18pt;
+}
+h3 {
+  font-size: 20pt;
+}
+h2 {
+  font-size: 22pt;
+}
+h1 {
+  font-size: 24pt;
+}
+pre {
+  font-size: 10pt;
+  white-space: pre-wrap;
+}
+a:link, a:visited, a:active, a:hover {
+  text-decoration: underline;
+}
+header, footer {
+  background-color: lightgrey;
+}
+header {
+  padding: 4px;
+}
+header h1 {
+  font-size: 16px;
+  white-space: nowrap;
+}
+footer {
+  padding: 4px;
+}
+footer p {
+  font-size: 9pt;
+  white-space: nowrap;
+}

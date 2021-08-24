@@ -1,0 +1,308 @@
+body {
+  background: url(background.jpg) center top/cover no-repeat fixed;
+}
+p, div, pre, li, th, td {
+  font-size: 10pt;
+}
+h6 {
+  font-size: 12pt;
+}
+h5 {
+  font-size: 14pt;
+}
+h4 {
+  font-size: 16pt;
+}
+h3 {
+  font-size: 18pt;
+}
+h2 {
+  font-size: 20pt;
+}
+h1 {
+  font-size: 22pt;
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: underline;
+}
+div#container, header, nav, section, footer {
+  position: fixed;
+}
+div#container {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+header {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 60px;
+}
+header h1 {
+  font-size: 36px;
+  letter-spacing: 40px;
+  text-transform: uppercase;
+}
+header h2 {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+}
+header div {
+  position: absolute;
+}
+#header_1 {
+  left: 30px;
+  top: 10px;
+}
+#header_2 {
+  right: calc(2 * 100% / 3 - 100px);
+  top: 10px;
+}
+#header_3 {
+  right: calc((2 * 100% / 3) / 2 - 50px);
+  top: 20px;
+}
+#header_4 {
+  right: 10px;
+  top: 30px;
+}
+nav {
+  top: 70px;
+  bottom: 34px;
+  left: 10px;
+  width: 270px;
+  overflow: auto;
+}
+nav a {
+  display: block;
+}
+nav > a {
+  font-size: 14pt;
+  padding: 5px 5px;
+  width: 240px;
+}
+nav > div {
+  width: 250px;
+}
+nav > div > a {
+  font-size: 12pt;
+  padding: 4px 5px 4px 20px;
+  width: 225px;
+}
+nav a:link, nav a:visited, nav a:active, nav a:hover {
+  color: #680148;
+  text-decoration: none;
+}
+nav a:active, nav a:hover, nav a.active {
+  color: white;
+  background-color: #680148;
+  transition: color 0.5s, background-color 0.5s;
+}
+nav a:link, nav a:visited {
+  transition: color 1s, background-color 1s;
+}
+section {
+  top: 60px;
+  bottom: 24px;
+  left: 310px;
+  right: 0px;
+  overflow: auto;
+}
+footer {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 14px;
+  padding: 8px;
+}
+footer p {
+  font-size: 10pt;
+}
+input, textarea, select {
+  font-size: 10pt;
+  transition: color 1s, background-color 1s, border-color 1s;
+}
+input:focus, textarea:focus, select:focus, input:hover, textarea:hover, select:hover {
+  border-color: orange;
+  transition: border-color 0.2s;
+}
+input[type=submit], input[type=button], input[type=reset] {
+  cursor: pointer;
+}
+input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus,
+input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover {
+  color: black;
+  background-color: orange;
+  transition: color 0.2s, background-color 0.2s;
+}
+aside > a:link, aside > a:visited {
+	transition: color 1s, background-color 1s;
+}
+aside > a:active, aside > a:hover {
+  color: black;
+  background-color: orange;
+	transition: color 0.2s, background-color 0.2s;
+}
+.lightbox a:active, .lightbox a:hover, #lightbox_close a:active,
+#lightbox_close a:hover {
+  color: #680148;
+}
+.tab-header {
+	margin-top: 20px;
+  overflow: hidden;
+	position: relative;
+	z-index: 99;
+}
+.tab-header a {
+	display: block;
+	float: left;
+	padding: 5px 8px;
+  margin-right: 3px;
+  border: 1px solid grey;
+}
+.tab-header a:link, .tab-header a:visited, .tab-header a:active, .tab-header a:hover {
+	text-decoration: none;
+}
+.tab-header a:link, .tab-header a:visited {
+	color: white;
+  background-color: grey;
+	transition: color 1s, background-color 1s;
+}
+.tab-header a:active, .tab-header a:hover {
+	color: black;
+  background-color: orange;
+	transition: color 0.2s, background-color 0.2s;
+}
+.tab-header a.active:link, .tab-header a.active:visited, .tab-header a.active:active,
+.tab-header a.active:hover {
+	color: black;
+  background-color: transparent;
+  border-bottom-color: white;
+}
+.tab-content {
+  border: 1px solid grey;
+	clear: both;
+	position: relative;
+	top: -1px;
+}
+.tab-content div.tab {
+	width: calc(100% - 20px);
+	padding: 10px;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s;
+}
+.tab-content div.tab-visible {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.5s;
+}
+table.list {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.list th, table.list td {
+  padding: 5px;
+  border: 1px solid grey;
+}
+td.center, td.links {
+  text-align: center;
+}
+td.links {
+  width: 80px;
+}
+article div.links {
+  text-align: right;
+}
+.author-created {
+  font-size: larger;
+  text-align: right;
+}
+textarea.article-content {
+  height: calc(100vh - 118px);
+}
+.comment-hidden {
+	color: red;
+	font-size: larger;
+	text-align: center;
+}
+section iframe {
+  display: none;
+}
+.filelist {
+  padding: 5px;
+  height: 230px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  display: flex;
+}
+.filelist div.item {
+  margin: 5px;
+  width: 242px;
+  height: 220px;
+  position: relative;
+}
+.filelist div.pag {
+  width: 40px;
+  height: 240px;
+  margin: 5px;
+}
+.filelist div.pag a {
+  display: block;
+  font-size: 36pt;
+  text-align: center;
+  padding-top: 80px;
+  height: 110px;
+}
+.filelist div.pag:first-child {
+  margin-right: auto;
+}
+.filelist div.pag:last-child {
+  margin-left: auto;
+}
+.filelist div.item div.content {
+  width: 240px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+.filelist div.item div.content * {
+  max-width: 240px;
+  max-height: 180px;
+  margin: auto;
+}
+.filelist div.item div.description {
+  font-size: smaller;
+  text-align: center;
+  height: 20px;
+  text-overflow: ellipsis;
+}
+.filelist div.item a.file-insert {
+  display: block;
+  text-align: center;
+  height: 20px;
+}
+.filelist div.item div.file-delete {
+  background-color: white;
+  font-size: larger;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#saveLoadButtons {
+  text-align: right;
+}
+#saveLoadButtons input[type=button] {
+  display: inline;
+  float: none;
+  clear: none;
+}

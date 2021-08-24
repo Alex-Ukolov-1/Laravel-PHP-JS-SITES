@@ -1,0 +1,6 @@
+nav, audio, video {
+  display: none;
+}
+header, section, footer {
+  position: static;
+}
