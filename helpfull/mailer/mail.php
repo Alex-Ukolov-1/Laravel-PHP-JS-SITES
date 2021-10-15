@@ -18,7 +18,7 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'paveltatyana5@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'SBpy-rUnrP13'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Password = 'SBpy-rUnrP90r'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'TLS';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
